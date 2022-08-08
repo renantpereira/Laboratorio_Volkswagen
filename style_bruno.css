@@ -1,0 +1,10 @@
+.tabela_principal {
+    display: block;
+    display: grid;
+}
+
+form {
+
+    padding: 0.8rem;
+    margin-top: 0.9rem;
+}
