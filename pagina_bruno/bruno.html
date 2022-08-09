@@ -10,35 +10,37 @@
 </head>
 
 <body>
-    
-    <form action="https://api.sheetmonkey.io/form/kko4gR8iyKna67d5kBgmW6" method="post">
+    <main>
+        <form action="https://api.sheetmonkey.io/form/kko4gR8iyKna67d5kBgmW6" method="post">
+            <div class="form_text">
+                <label>Numero de Serie: <input type="text" name="Nº de Serie" class="n_serie" required /></label>
 
-        <label>Numero de Serie: <input type="text" name="Nº de Serie" required /></label>
+                <label>Your Email: <input type="email" name="Email" value="bruno.carvalho@volkswagen.com.br"
+                        required /></label>
 
-        <label>Your Email: <input type="email" name="Email" value="bruno.carvalho@volkswagen.com.br" required /></label>
+                <label>Selecione Log: <select name="Processo">
+                        <option>Formatação</option>
+                        <option>Avaria</option>
+                        <option>Reparação</option>
+                    </select>
+                </label>
 
-        <label>Selecione Log: <select name="Processo">
-                <option>Formatação</option>
-                <option>Avaria</option>
-                <option>Reparação</option>
-            </select>
-        </label>
+                <label>Service Center:<input type="text" name="Service Center" value="" required /> </label>
 
-        <label>Service Center:<input type="text" name="Service Center" value="" required /> </label>
+            </div>
+            <div class="text_area">
+                <label>Primeira Analise:
+                    <textarea name="Diagnostico do Analista" placeholder="Escreva aqui sua primeira analise"></textarea>
+                </label>
+            </div>
+            <input type="hidden" name="Data de Criação" value="x-sheetmonkey-current-date-time" />
+            <input type="submit" value="Enviar" />
 
-
-        <label>Primeira Analise:
-            <textarea name="Diagnostico do Analista" placeholder="Escreva aqui sua primeira analise"></textarea>
-        </label>
-
-        <input type="hidden" name="Data de Criação" value="x-sheetmonkey-current-date-time" />
-        <input type="submit" value="Enviar" />
-
-    </form>
-
+        </form>
+    </main>
     <footer>
         <button>
-            <a href="./index.html">Voltar</a>
+            <a href="../index.html">Voltar</a>
         </button>
     </footer>
 </body>
