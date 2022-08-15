@@ -6,52 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Laboratorio ChairMan</title>
 </head>
 
 <body>
     <form action="https://api.sheetmonkey.io/form/kko4gR8iyKna67d5kBgmW6" method="post">
         <div class="form_text">
+            <div class="div_ns">
 
-            <span>Numero de Serie:</span>
-            <label>
-                <input type="text" name="Nº de Serie" required />
-            </label>
-            <span>Seu Email: </span>
-            <label>
-                <input type="email" name="Email" value="bruno.carvalho@volkswagen.com.br" class="box_email" required />
-            </label>
-            <span>Selecione Log: </span>
-            <label>
-                <select name="Processo">
-                    <option>Formatação</option>
-                    <option>Avaria</option>
-                    <option>Reparação</option>
-                </select>
-            </label>
-            <span>Service Center:</span>
-            <label>
-                <input type="text" name="Service Center" value="" required />
-            </label>
+                <p>Número de Série:</p>
+                <input type="text" name="Nº de Serie" required size="50" />
 
+                <p>Seu Email:</p>
+                <label>
+                    <input type="email" name="Email" value="extern.bruno.ferreira@volkswagen.com.br" class="box_email"
+                        size="50" style="text-align: Center;" required />
+                </label>
+
+                <p>Selecione Log: </p>
+                <label>
+                    <select name="Processo">
+                        <option>Formatação</option>
+                        <option>Avaria</option>
+                        <option>Reparação</option>
+                    </select>
+                </label>
+                <p>Service Center:</p>
+                <label>
+                    <input type="text" name="Service Center" value="" size="50" required />
+                </label>
+                <div class="text_area">
+                    <p>Analise:</p>
+                    <textarea name="Diagnostico do Analista" rows="5" cols="50" placeholder="Escreva aqui sua analise">
+                        </textarea>
+
+                </div>
+                <div class="footer">
+                <input type="hidden" name="Data de Criação" value="x-sheetmonkey-current-date-time" />
+                <input type="submit" class="enviar" value="Enviar" />
+                <button>
+                    <a href="../index.html">Voltar</a>
+                </button>
+            </div>
+            </div>
         </div>
-        <div class="text_area">
-            <span>Primeira Analise:</span>
-
-            <label>
-                <textarea name="Diagnostico do Analista" placeholder="Escreva aqui sua primeira analise">
-
-                    </textarea>
-            </label>
-        </div>
-        <input type="hidden" name="Data de Criação" value="x-sheetmonkey-current-date-time" />
-        <input type="submit" value="Enviar" />
-
     </form>
     <footer>
-        <button>
-            <a href="../index.html">Voltar</a>
-        </button>
     </footer>
 </body>
 
