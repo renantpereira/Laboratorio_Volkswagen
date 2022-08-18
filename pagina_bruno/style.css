@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5;
-    border-radius: 4px;
+    line-height: 1.7;
+    border-radius: 3px;
     background-color: var(--light);
 }
 
@@ -36,7 +36,7 @@
 
 .form_text {
     height: 100vh;
-    display: grid;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
